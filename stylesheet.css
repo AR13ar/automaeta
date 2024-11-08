@@ -133,3 +133,21 @@ h2 {
 span.highlight {
   background-color: #ffffd0;
 }
+
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+h1 {
+    color: #333;
+}
+
+canvas {
+    border: 1px solid #000;
+    background-color: #aaffff;
+    display: block;
+    margin: 0 auto;
+}
