@@ -8,15 +8,12 @@ let gameOver = false;
 const backg = new Image();
 backg.src = "Images/base.png";
 
-  
-
-
 // Box object
 class Box {
     constructor(url, imageUrl, text) {
         this.x = 400 //Math.random() * (canvas.width - 160);
         this.y = 250//Math.random() * (canvas.height - 160);
-        this.size = 120;
+        this.size = 150;
         this.dx = 1 + Math.random() * 2; // Horizontal speed
         this.dy = 1 + Math.random() * 2; // Vertical speed
         this.url = url;
