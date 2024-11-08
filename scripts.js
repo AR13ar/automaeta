@@ -6,7 +6,7 @@ let boxes = [];
 let gameOver = false;
 
 const img = new Image();
-img.src = "Images/base.jpeg";
+img.src = "Images/base.png";
 ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
   
 
