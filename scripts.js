@@ -54,10 +54,10 @@ class Box {
 }
 // Initialize boxes with URLs and image URLs
 function createBoxes() {
-    boxes.push(new Box("https://example.com", "https://via.placeholder.com/80?text=Box+1", "Box 1"));
-    boxes.push(new Box("https://example2.com", "https://via.placeholder.com/80?text=Box+2", "Box 2"));
-    boxes.push(new Box("https://example3.com", "https://via.placeholder.com/80?text=Box+3", "Box 3"));
-    boxes.push(new Box("https://example4.com", "https://via.placeholder.com/80?text=Box+4", "Box 4"));
+    boxes.push(new Box("https://example.com", "Images/img_1", "Box 1"));
+    boxes.push(new Box("https://example2.com", "Images/img_2", "Box 2"));
+    boxes.push(new Box("https://example3.com", "Images/img_3", "Box 3"));
+    boxes.push(new Box("https://example4.com", "Images/img_4", "Box 4"));
 }
 
 // Game loop
