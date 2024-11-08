@@ -5,9 +5,9 @@ const ctx = canvas.getContext('2d');
 let boxes = [];
 let gameOver = false;
 
-const img = new Image();
-img.src = "https://github.com/AR13ar/automaeta/blob/main/Images/base.png";
-ctx.drawImage(img, 0, 0, 800, 500);
+const backg = new Image();
+backg.src = "https://github.com/AR13ar/automaeta/blob/main/Images/base.png";
+
   
 
 
@@ -69,9 +69,9 @@ function createBoxes() {
 // Game loop
 function gameLoop() {
     if (gameOver) return;
-
+  
     ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas
-
+    ctx.drawImage(backg, 0, 0, 800, 500);
     // Update and draw each box
     boxes.forEach(box => {
         box.update();
