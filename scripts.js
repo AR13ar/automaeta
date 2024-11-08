@@ -69,9 +69,9 @@ function createBoxes() {
 // Game loop
 function gameLoop() {
     if (gameOver) return;
-  
-    ctx.clearRect(0, 0, canvas.width, canvas.height); // Clear the canvas
     ctx.drawImage(backg, 0, 0, 800, 500);
+    
+    
     // Update and draw each box
     boxes.forEach(box => {
         box.update();
