@@ -57,10 +57,10 @@ class Box {
 }
 // Initialize boxes with URLs and image URLs
 function createBoxes() {
-    boxes.push(new Box("https://example.com", "Images/img_1.jpg", "Box 1"));
-    boxes.push(new Box("https://example2.com", "Images/img_2.jpg", "Box 2"));
-    boxes.push(new Box("https://example3.com", "Images/img_3.jpg", "Box 3"));
-    boxes.push(new Box("https://example4.com", "Images/img_4.jpg", "Box 4"));
+    boxes.push(new Box("https://example.com", "Images/img_1.jpg", "Projects"));
+    boxes.push(new Box("https://example2.com", "Images/img_2.jpg", "Publications"));
+    boxes.push(new Box("https://example3.com", "Images/img_3.jpg", "Research Background"));
+    boxes.push(new Box("https://example4.com", "Images/img_4.jpg", "Everything Else"));
 }
 
 // Game loop
