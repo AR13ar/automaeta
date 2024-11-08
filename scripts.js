@@ -6,7 +6,7 @@ let boxes = [];
 let gameOver = false;
 
 const backg = new Image();
-backg.src = "https://github.com/AR13ar/automaeta/blob/main/Images/base.png";
+backg.src = "Images/base.png";
 
   
 
