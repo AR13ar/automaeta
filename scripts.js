@@ -8,20 +8,29 @@ let gameOver = false;
 // Box object
 class Box {
     constructor(url, imageUrl, text) {
-        this.x = canvas.width;
+        this.x = Math.random() * canvas.width;
         this.y = Math.random() * canvas.height;
         this.size = 80;
-        this.speed = 1 + Math.random() * 2;
+        this.dx = 1 + Math.random() * 2; // Horizontal speed
+        this.dy = 1 + Math.random() * 2; // Vertical speed
         this.url = url;
         this.imageUrl = imageUrl;
         this.text = text;
     }
 
     update() {
-        this.x -= this.speed; // Move box leftward
-        if (this.x + this.size < 0) {
-            this.x = canvas.width;
-            this.y = Math.random() * canvas.height;
+        // Update position based on speed
+        this.x += this.dx;
+        this.y += this.dy;
+
+        // Bounce off the right or left edges
+        if (this.x + this.size > canvas.width || this.x < 0) {
+            this.dx *= -1; // Reverse horizontal direction
+        }
+
+        // Bounce off the top or bottom edges
+        if (this.y + this.size > canvas.height || this.y < 0) {
+            this.dy *= -1; // Reverse vertical direction
         }
     }
 
@@ -43,7 +52,6 @@ class Box {
                mouseY >= this.y && mouseY <= this.y + this.size;
     }
 }
-
 // Initialize boxes with URLs and image URLs
 function createBoxes() {
     boxes.push(new Box("https://example.com", "https://via.placeholder.com/80?text=Box+1", "Box 1"));
