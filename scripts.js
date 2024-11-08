@@ -6,8 +6,8 @@ let boxes = [];
 let gameOver = false;
 
 const img = new Image();
-img.src = "Images/base.png";
-ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+img.src = "https://github.com/AR13ar/automaeta/blob/main/Images/base.png";
+ctx.drawImage(img, 0, 0, 800, 500);
   
 
 
