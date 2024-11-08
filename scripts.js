@@ -69,7 +69,7 @@ function createBoxes() {
 // Game loop
 function gameLoop() {
     if (gameOver) return;
-    ctx.drawImage(backg, 0, 0, 800, 500);
+    ctx.drawImage(backg, 0, 0, canvas.width, canvas.height);
     
     
     // Update and draw each box
@@ -96,5 +96,7 @@ canvas.addEventListener('click', (e) => {
 });
 
 // Start game
-createBoxes();
-gameLoop();
+backg.onload = function() {
+    createBoxes();
+    gameLoop();
+};
