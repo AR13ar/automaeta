@@ -6,11 +6,10 @@ let boxes = [];
 let gameOver = false;
 
 const img = new Image();
-  img.onload = () => {
-    ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
-  };
-  img.src = "Image/base.jpeg";
-}
+img.src = "Images/base.jpeg";
+ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
+  
+
 
 // Box object
 class Box {
